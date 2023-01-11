@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Sentiment Analysis of Lockdown in USA during Covid-19</h2>
+<p>A case study on Twitter using Machine Learning</p>
+
+<table border="1">
+    <thead>
+    <th>Tweet</th>
+    <th>Sentiment</th>
+    </thead>
+    <tbody>
+    {% for key, value in sentiments.items %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ value }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
